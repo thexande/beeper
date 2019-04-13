@@ -1,9 +1,21 @@
-//
-//  beeper.swift
-//  beeper
-//
-//  Created by Alexander Murphy on 4/13/19.
-//  Copyright © 2019 beeper. All rights reserved.
-//
 
-import Foundation
+protocol PagerViewDelegate {
+    
+}
+
+protocol PagerViewDatasource {
+    func view(for index: Int) -> UIView
+    func numberOfPages() -> Int
+    func titleForPage() -> String
+}
+
+final class TabBarView: UICollectionView {
+    
+}
+
+public final class PagerView: UIView {
+    
+}
+
+
+
