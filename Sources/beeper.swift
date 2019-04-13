@@ -1,3 +1,4 @@
+import Anchorage
 
 public protocol PagerViewDelegate: AnyObject {
     func titleForPage() -> String
@@ -41,14 +42,7 @@ final class TagBarView: UIView, ViewRendering {
     override init(frame: CGRect) {
         super.init(frame: frame)
         addSubview(collection)
-        NSLayoutConstraint.constraints(withVisualFormat: "V:|-0-[collection]-0-|",
-                                       options: [],
-                                       metrics: [:],
-                                       views: ["collection":collection])
-        NSLayoutConstraint.constraints(withVisualFormat: "H:|-0-[collection]-0-|",
-                                       options: [],
-                                       metrics: [:],
-                                       views: ["collection":collection])
+        collection.edgeAnchors == edgeAnchors
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -112,7 +106,22 @@ final class PagerViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.addSubview(<#T##view: UIView##UIView#>)
+        [tagBarView, pager].forEach {
+            view.addSubview($0)
+            $0.horizontalAnchors == view.horizontalAnchors
+        }
+        
+        if #available(iOS 11.0, *) {
+            tagBarView.topAnchor == view.safeAreaLayoutGuide.topAnchor
+        } else {
+            // Fallback on earlier versions
+        }
+        
+        tagBarView.heightAnchor == 60
+        
+        pager.topAnchor == tagBarView.bottomAnchor
+        pager.bottomAnchor == view.bottomAnchor
+        
     }
     
 }

@@ -843,7 +843,7 @@
 			};
 			name = Release;
 		};
-		6BEEB8B630FA4EE1F7746F11D3AD1EF2 /* Debug */ = {
+		5D91C2BFC9C2B1694AEA949A9D00BEFE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CFC840D5CAC85E48DF2D0F2FF2088187 /* beeper.xcconfig */;
 			buildSettings = {
@@ -859,7 +859,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/beeper/beeper-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/beeper/beeper-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1011,7 +1011,7 @@
 			};
 			name = Debug;
 		};
-		AC8869D741E9B87D8B6A3292DFB2B288 /* Release */ = {
+		8FD7B7163C0D665DE55DA8C602143917 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CFC840D5CAC85E48DF2D0F2FF2088187 /* beeper.xcconfig */;
 			buildSettings = {
@@ -1027,7 +1027,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/beeper/beeper-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/beeper/beeper-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1153,8 +1153,8 @@
 		304ED9ECBCEF0810C3698BE4D52A7A39 /* Build configuration list for PBXNativeTarget "beeper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6BEEB8B630FA4EE1F7746F11D3AD1EF2 /* Debug */,
-				AC8869D741E9B87D8B6A3292DFB2B288 /* Release */,
+				5D91C2BFC9C2B1694AEA949A9D00BEFE /* Debug */,
+				8FD7B7163C0D665DE55DA8C602143917 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
