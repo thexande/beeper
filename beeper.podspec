@@ -18,4 +18,5 @@ Pod::Spec.new do |s|
   s.source_files  = "Sources/**/*"
   s.frameworks  = "Foundation"
   s.frameworks = "UIKit"
+  s.dependency "Anchorage"
 end
