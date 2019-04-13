@@ -7,18 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		011511C2BF70D7CBBCFB486F7D965ABC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
-		0271321316816EBDDFCA3E2F0672E5F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
-		09628788C2AF966EABE8927E14E09699 /* beeper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EEA666A2A8804E6F1BEF2304032F08AC /* beeper-dummy.m */; };
+		0271321316816EBDDFCA3E2F0672E5F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */; };
 		0AAA289A865D8515573EBAC2E4B7723D /* Pods-beeper_exampleTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AD4A5E781916EE19BDBBD93CBD6D8D44 /* Pods-beeper_exampleTests-dummy.m */; };
 		16B8A11326A88F6459C8F4BDB679A64A /* Pods-beeper_example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 10227AD608E7D1862E7A3F18B739DAFE /* Pods-beeper_example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		397F99CC2AB21F945C4D3708580F8D99 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
-		486AA7BFE96C6B4546AEB7229850E861 /* beeper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC46D345EA4F019AC1B07D67D47B8AC3 /* beeper.swift */; };
-		56B5C731E0D2A48803956FE525B97ADF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		18CA8AB3C3F5A4D34488D4761F7869A6 /* beeper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EAF129512FE85435D891AE54F6CEB4DA /* beeper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		397F99CC2AB21F945C4D3708580F8D99 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */; };
+		56B5C731E0D2A48803956FE525B97ADF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */; };
 		668183717BE6312EC990B67E8E35D79F /* Pods-beeper_example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF6AE649FA47E85DF2378C842512C9D /* Pods-beeper_example-dummy.m */; };
 		6CB38EF1E40BC63B5E5CB2F0EF701CA7 /* Pods-beeper_exampleUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 464B7DC8722B8729B30CD2F56CF7B589 /* Pods-beeper_exampleUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		727E4DADA74BC051FB0DA0A14000CF02 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */; };
+		8C65CC3D9D23345D0DDA4013A4B7DDE2 /* beeper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EEA666A2A8804E6F1BEF2304032F08AC /* beeper-dummy.m */; };
 		8DFBB5F0DF537F58EA7A7684C7506D65 /* Pods-beeper_exampleUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F479978A8FD8E9D179E3FC53FD73EF5 /* Pods-beeper_exampleUITests-dummy.m */; };
-		9904061B84FA5791AE8F5557A135DF4A /* beeper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EAF129512FE85435D891AE54F6CEB4DA /* beeper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B0BA1FC9C08AAB534125F82E23DEA67E /* beeper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC46D345EA4F019AC1B07D67D47B8AC3 /* beeper.swift */; };
+		C8B681A31BD8D535B60311DB20811CB9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF2A2B0720AE923C22BED3192888BE0 /* UIKit.framework */; };
 		E8DCFC8B8AD292D19FAF7607E8366AB3 /* Pods-beeper_exampleTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D3F273CE84348FFB7DC769BBE650CC10 /* Pods-beeper_exampleTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -27,7 +28,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 854BDE2FCDC72F96BAA1CBF6A9BDA733;
+			remoteGlobalIDString = 26DD71070B8AA9A7453233E59E2D9472;
 			remoteInfo = beeper;
 		};
 		8D08B8ECAE9881974012D8732908B875 /* PBXContainerItemProxy */ = {
@@ -54,6 +55,7 @@
 		16E68D67E88CB7EE24AFFABA068D7E24 /* Pods-beeper_exampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-beeper_exampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		21FF2AC81C7CB5EFE03BD992037A8718 /* Pods_beeper_exampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_beeper_exampleUITests.framework; path = "Pods-beeper_exampleUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		396EF08E58A9D8277BA802CDA3D18C1D /* Pods-beeper_exampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-beeper_exampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		464B7DC8722B8729B30CD2F56CF7B589 /* Pods-beeper_exampleUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-beeper_exampleUITests-umbrella.h"; sourceTree = "<group>"; };
 		477F1C4BD7A65F0D7DB5F0B3EFF6DBC2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		4FCDF9D07E07364AE6F52A5F21EBB0EE /* Pods_beeper_example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_beeper_example.framework; path = "Pods-beeper_example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,7 +76,6 @@
 		B65C20BD8D01C7BE5165EB10DD9EF06E /* Pods-beeper_example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-beeper_example-acknowledgements.plist"; sourceTree = "<group>"; };
 		C2C3704A6337F26959E30A47BC035821 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		CA6FDD0B0B2F71FEC0877B79D3A9BDCC /* Pods-beeper_exampleUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-beeper_exampleUITests-Info.plist"; sourceTree = "<group>"; };
-		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		CF53421B0790CAC329978AC660118112 /* Pods-beeper_exampleUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-beeper_exampleUITests.modulemap"; sourceTree = "<group>"; };
 		CFC840D5CAC85E48DF2D0F2FF2088187 /* beeper.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = beeper.xcconfig; sourceTree = "<group>"; };
 		D3F273CE84348FFB7DC769BBE650CC10 /* Pods-beeper_exampleTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-beeper_exampleTests-umbrella.h"; sourceTree = "<group>"; };
@@ -85,6 +86,7 @@
 		EAF129512FE85435D891AE54F6CEB4DA /* beeper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "beeper-umbrella.h"; sourceTree = "<group>"; };
 		EAFC09BEDB6A7AE5A92A43E5F9763B51 /* beeper.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = beeper.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		EC46D345EA4F019AC1B07D67D47B8AC3 /* beeper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = beeper.swift; path = Sources/beeper.swift; sourceTree = "<group>"; };
+		ECF2A2B0720AE923C22BED3192888BE0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		EE4E9492061324F2338D224FB1D894EA /* Pods-beeper_example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-beeper_example.modulemap"; sourceTree = "<group>"; };
 		EEA666A2A8804E6F1BEF2304032F08AC /* beeper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "beeper-dummy.m"; sourceTree = "<group>"; };
 		FACD477428C04E65B74DAD268B4AC470 /* Pods-beeper_exampleUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-beeper_exampleUITests-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -107,11 +109,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C23DBDFC6B4F2132837A093DA62B1B66 /* Frameworks */ = {
+		821AC50B3AE700D930B80311F1F43B85 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				011511C2BF70D7CBBCFB486F7D965ABC /* Foundation.framework in Frameworks */,
+				727E4DADA74BC051FB0DA0A14000CF02 /* Foundation.framework in Frameworks */,
+				C8B681A31BD8D535B60311DB20811CB9 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +143,14 @@
 			);
 			name = "Pods-beeper_exampleTests";
 			path = "Target Support Files/Pods-beeper_exampleTests";
+			sourceTree = "<group>";
+		};
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E169A450ED27AC725DF52953F66D11E0 /* iOS */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		204092B97866653576C164B8C97D8715 /* Pods-beeper_example */ = {
@@ -205,14 +216,6 @@
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		9B055D0CFEA43187E72B03DED11F5662 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
 		A451E0E3A075D30DA67E09490F50D624 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -252,18 +255,19 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				75AF0040621F7E796D2035D5A6B51184 /* Development Pods */,
-				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
 				42676BCB26ECA8933475589B26303E0D /* Products */,
 				A451E0E3A075D30DA67E09490F50D624 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+		E169A450ED27AC725DF52953F66D11E0 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				9B055D0CFEA43187E72B03DED11F5662 /* iOS */,
+				40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */,
+				ECF2A2B0720AE923C22BED3192888BE0 /* UIKit.framework */,
 			);
-			name = Frameworks;
+			name = iOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,14 +289,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A9C3A17D87EE8224E621E566B6A1BFC7 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9904061B84FA5791AE8F5557A135DF4A /* beeper-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		DCAFF8262A53EB02DB102BB18D46855B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -301,9 +297,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F58466A788B7893473AF7920C1E679C3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18CA8AB3C3F5A4D34488D4761F7869A6 /* beeper-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		26DD71070B8AA9A7453233E59E2D9472 /* beeper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1D7DE62DCC59D33D37656CE801236B6 /* Build configuration list for PBXNativeTarget "beeper" */;
+			buildPhases = (
+				F58466A788B7893473AF7920C1E679C3 /* Headers */,
+				86126DA0E5143496CD7422186CF694EF /* Sources */,
+				821AC50B3AE700D930B80311F1F43B85 /* Frameworks */,
+				5698029522BCC9E161B780F6066FB388 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = beeper;
+			productName = beeper;
+			productReference = A0A3E199E8269F16B54EE2D454D9CA53 /* beeper.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		39E27C60EBE455FEB6D6D0614671128F /* Pods-beeper_exampleUITests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DCD6E8F39BD9157E393E0D139ACA86EC /* Build configuration list for PBXNativeTarget "Pods-beeper_exampleUITests" */;
@@ -340,24 +362,6 @@
 			name = "Pods-beeper_example";
 			productName = "Pods-beeper_example";
 			productReference = 4FCDF9D07E07364AE6F52A5F21EBB0EE /* Pods_beeper_example.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		854BDE2FCDC72F96BAA1CBF6A9BDA733 /* beeper */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C989F8E8A9908D5B3C8081CE4BCC5C03 /* Build configuration list for PBXNativeTarget "beeper" */;
-			buildPhases = (
-				A9C3A17D87EE8224E621E566B6A1BFC7 /* Headers */,
-				DEADDBD5E28A82675D57F19F61EC27F0 /* Sources */,
-				C23DBDFC6B4F2132837A093DA62B1B66 /* Frameworks */,
-				6A746B319EBA0AA46B8A28FBFD17D0C5 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = beeper;
-			productName = beeper;
-			productReference = A0A3E199E8269F16B54EE2D454D9CA53 /* beeper.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		B528A2092D32C8CAF988E3D42FA46423 /* Pods-beeper_exampleTests */ = {
@@ -400,7 +404,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				854BDE2FCDC72F96BAA1CBF6A9BDA733 /* beeper */,
+				26DD71070B8AA9A7453233E59E2D9472 /* beeper */,
 				6C31C723A7D40000FF0D69E7097BD9FF /* Pods-beeper_example */,
 				B528A2092D32C8CAF988E3D42FA46423 /* Pods-beeper_exampleTests */,
 				39E27C60EBE455FEB6D6D0614671128F /* Pods-beeper_exampleUITests */,
@@ -416,7 +420,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6A746B319EBA0AA46B8A28FBFD17D0C5 /* Resources */ = {
+		5698029522BCC9E161B780F6066FB388 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -456,20 +460,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		86126DA0E5143496CD7422186CF694EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C65CC3D9D23345D0DDA4013A4B7DDE2 /* beeper-dummy.m in Sources */,
+				B0BA1FC9C08AAB534125F82E23DEA67E /* beeper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C241D7F492575E5D7307CB8E5619C8EF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				8DFBB5F0DF537F58EA7A7684C7506D65 /* Pods-beeper_exampleUITests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DEADDBD5E28A82675D57F19F61EC27F0 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				09628788C2AF966EABE8927E14E09699 /* beeper-dummy.m in Sources */,
-				486AA7BFE96C6B4546AEB7229850E861 /* beeper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -479,7 +483,7 @@
 		368B6E8A7542D87EC44D89C89FEE8A59 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = beeper;
-			target = 854BDE2FCDC72F96BAA1CBF6A9BDA733 /* beeper */;
+			target = 26DD71070B8AA9A7453233E59E2D9472 /* beeper */;
 			targetProxy = 7CD779AB757260891AAA99225D967261 /* PBXContainerItemProxy */;
 		};
 		BD49C3B232DF7EB92277D2A488BAF962 /* PBXTargetDependency */ = {
@@ -497,7 +501,7 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		07D0E63FFCD28A6C52CC41BE8A4022B2 /* Release */ = {
+		0EF4DD53E459BACBBDD07AB8F49E565A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CFC840D5CAC85E48DF2D0F2FF2088187 /* beeper.xcconfig */;
 			buildSettings = {
@@ -527,11 +531,10 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		2B955BF4F4B4D4657B0078E1117543F6 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -764,41 +767,6 @@
 			};
 			name = Debug;
 		};
-		7B70C21F4533D7520C30153773825C9E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CFC840D5CAC85E48DF2D0F2FF2088187 /* beeper.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/beeper/beeper-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/beeper/beeper-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/beeper/beeper.modulemap";
-				PRODUCT_MODULE_NAME = beeper;
-				PRODUCT_NAME = beeper;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		84A06F28E9E7D9EB0A9B476A8668FD60 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -856,6 +824,42 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		C0D621946E5A6F60526AEC1A95D48233 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFC840D5CAC85E48DF2D0F2FF2088187 /* beeper.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/beeper/beeper-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/beeper/beeper-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/beeper/beeper.modulemap";
+				PRODUCT_MODULE_NAME = beeper;
+				PRODUCT_NAME = beeper;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -953,20 +957,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C989F8E8A9908D5B3C8081CE4BCC5C03 /* Build configuration list for PBXNativeTarget "beeper" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7B70C21F4533D7520C30153773825C9E /* Debug */,
-				07D0E63FFCD28A6C52CC41BE8A4022B2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		DCD6E8F39BD9157E393E0D139ACA86EC /* Build configuration list for PBXNativeTarget "Pods-beeper_exampleUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				319DE1555171DE29ECFCFEEE4211C821 /* Debug */,
 				31E51F46ED38FE0C8D4D339F6F34AE31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1D7DE62DCC59D33D37656CE801236B6 /* Build configuration list for PBXNativeTarget "beeper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0EF4DD53E459BACBBDD07AB8F49E565A /* Debug */,
+				C0D621946E5A6F60526AEC1A95D48233 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

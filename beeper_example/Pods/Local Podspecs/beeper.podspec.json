@@ -23,5 +23,5 @@
     "tag": "0.1"
   },
   "source_files": "Sources/**/*",
-  "frameworks": "Foundation"
+  "frameworks": "UIKit"
 }
