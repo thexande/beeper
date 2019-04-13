@@ -23,5 +23,10 @@
     "tag": "0.1"
   },
   "source_files": "Sources/**/*",
-  "frameworks": "UIKit"
+  "frameworks": "UIKit",
+  "dependencies": {
+    "Anchorage": [
+
+    ]
+  }
 }

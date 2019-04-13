@@ -7,74 +7,111 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0271321316816EBDDFCA3E2F0672E5F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */; };
+		0271321316816EBDDFCA3E2F0672E5F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCE1B07F10C33E79E381D0A3003A5AA5 /* Foundation.framework */; };
 		0AAA289A865D8515573EBAC2E4B7723D /* Pods-beeper_exampleTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AD4A5E781916EE19BDBBD93CBD6D8D44 /* Pods-beeper_exampleTests-dummy.m */; };
-		16B8A11326A88F6459C8F4BDB679A64A /* Pods-beeper_example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 10227AD608E7D1862E7A3F18B739DAFE /* Pods-beeper_example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		18CA8AB3C3F5A4D34488D4761F7869A6 /* beeper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EAF129512FE85435D891AE54F6CEB4DA /* beeper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		397F99CC2AB21F945C4D3708580F8D99 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */; };
-		56B5C731E0D2A48803956FE525B97ADF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */; };
-		668183717BE6312EC990B67E8E35D79F /* Pods-beeper_example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF6AE649FA47E85DF2378C842512C9D /* Pods-beeper_example-dummy.m */; };
+		15097ECCBCC6821E6F9D736AE1241BCB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C448D26A7608A5AC4E20957DBC518D82 /* UIKit.framework */; };
+		4352962C236E33C5745AEE2BF3F707C5 /* Anchorage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D8E7885A6F022C0ABCAA9BA2F0EF56 /* Anchorage-dummy.m */; };
+		487A0D6F371227EF9F2D69FE3D311FC0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCE1B07F10C33E79E381D0A3003A5AA5 /* Foundation.framework */; };
+		52A2D3BA9B8CFA3FDBF477EAC6FCCBCE /* Pods-beeper_example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF6AE649FA47E85DF2378C842512C9D /* Pods-beeper_example-dummy.m */; };
+		56B5C731E0D2A48803956FE525B97ADF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCE1B07F10C33E79E381D0A3003A5AA5 /* Foundation.framework */; };
 		6CB38EF1E40BC63B5E5CB2F0EF701CA7 /* Pods-beeper_exampleUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 464B7DC8722B8729B30CD2F56CF7B589 /* Pods-beeper_exampleUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		727E4DADA74BC051FB0DA0A14000CF02 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */; };
-		8C65CC3D9D23345D0DDA4013A4B7DDE2 /* beeper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EEA666A2A8804E6F1BEF2304032F08AC /* beeper-dummy.m */; };
+		6D665F71CD1786D03FF1A0B3424A14AF /* Compatability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9253CEC6DCBD3BEA65EF9956720B25 /* Compatability.swift */; };
+		6FC321984447ACD1FC2725C9AC8561E6 /* beeper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EAF129512FE85435D891AE54F6CEB4DA /* beeper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7721B0D946CC60EAC47227C14E195BD7 /* Priority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E43AFC047D73D87CA1855418E152B3C /* Priority.swift */; };
+		8963CE70E9096090E1AA85DE3BD6A92B /* AnchorGroupProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D312EB6C2681AFCAD104CD71A333093 /* AnchorGroupProvider.swift */; };
 		8DFBB5F0DF537F58EA7A7684C7506D65 /* Pods-beeper_exampleUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F479978A8FD8E9D179E3FC53FD73EF5 /* Pods-beeper_exampleUITests-dummy.m */; };
-		B0BA1FC9C08AAB534125F82E23DEA67E /* beeper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC46D345EA4F019AC1B07D67D47B8AC3 /* beeper.swift */; };
-		C8B681A31BD8D535B60311DB20811CB9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF2A2B0720AE923C22BED3192888BE0 /* UIKit.framework */; };
+		9F216A620CA3C2C016ACA2F29584BD50 /* Anchorage-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BCB003BBB47B8A9B7F862F6E960CCC80 /* Anchorage-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F2DBB77EC85600B275C14A95D06C55A /* beeper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC46D345EA4F019AC1B07D67D47B8AC3 /* beeper.swift */; };
+		AE1E2131DE988F9F00C87328C7B13315 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCE1B07F10C33E79E381D0A3003A5AA5 /* Foundation.framework */; };
+		B0A109404BF07AD2CE34DCCEFC129554 /* beeper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EEA666A2A8804E6F1BEF2304032F08AC /* beeper-dummy.m */; };
+		B56857D4AC6ACEE4BE028AFC7AB78806 /* Pods-beeper_example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 10227AD608E7D1862E7A3F18B739DAFE /* Pods-beeper_example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE77CC436CD4BC7CE123C85858DAE6A9 /* Internal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E9910442BDAE26EC948299120D9508 /* Internal.swift */; };
+		E3D4725DCA700493E48402C225360E23 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCE1B07F10C33E79E381D0A3003A5AA5 /* Foundation.framework */; };
+		E459D3D46A07A7C35A5E8A207EAEF765 /* NSLayoutAnchor+MultiplierConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2957C569C83146F1B5A60519BB7CE9 /* NSLayoutAnchor+MultiplierConstraints.swift */; };
+		E8D430F39A1D8CF1A26D09B826EBE50D /* Anchorage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 704F8F19B876B4B5CFAA2E0A8534BC69 /* Anchorage.framework */; };
 		E8DCFC8B8AD292D19FAF7607E8366AB3 /* Pods-beeper_exampleTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D3F273CE84348FFB7DC769BBE650CC10 /* Pods-beeper_exampleTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F22263BFB78EF8CF86BB784676A29E85 /* Anchorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52458BDC6F82A2A58ED5EBDD6B538FD /* Anchorage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		7CD779AB757260891AAA99225D967261 /* PBXContainerItemProxy */ = {
+		372A38FDE5C3FC3DD011B273818B20CD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 26DD71070B8AA9A7453233E59E2D9472;
+			remoteGlobalIDString = 80E0C7D6ACE5972BAA95E5AF9EBAE4FA;
+			remoteInfo = Anchorage;
+		};
+		8699FCE264BF87622BA3E566978C38E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E92402B2248427A7DC44A4A98B1818F9;
 			remoteInfo = beeper;
 		};
 		8D08B8ECAE9881974012D8732908B875 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 6C31C723A7D40000FF0D69E7097BD9FF;
+			remoteGlobalIDString = 1592B5CE13E920B3E53BC558F0638F19;
 			remoteInfo = "Pods-beeper_example";
 		};
 		A875AFB862315FCD792E84B5CDCC78BA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 6C31C723A7D40000FF0D69E7097BD9FF;
+			remoteGlobalIDString = 1592B5CE13E920B3E53BC558F0638F19;
 			remoteInfo = "Pods-beeper_example";
+		};
+		DC8E9AE2B4D91D35432EB5C29AC7F5E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 80E0C7D6ACE5972BAA95E5AF9EBAE4FA;
+			remoteInfo = Anchorage;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04DC24C72057D2DCBC482C6D9FF8B3E2 /* Anchorage-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Anchorage-Info.plist"; sourceTree = "<group>"; };
+		06EF4DD389165A57BF142ECAD400AB60 /* beeper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = beeper.framework; path = beeper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CB61EBC493B03C09FE7C93B06828A53 /* Pods-beeper_example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-beeper_example-frameworks.sh"; sourceTree = "<group>"; };
 		10227AD608E7D1862E7A3F18B739DAFE /* Pods-beeper_example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-beeper_example-umbrella.h"; sourceTree = "<group>"; };
 		140B2F7CD853E06A508B40E1885BDDC4 /* beeper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = beeper.modulemap; sourceTree = "<group>"; };
 		14CB559F41692BEEC775850D884B192A /* Pods-beeper_example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-beeper_example.debug.xcconfig"; sourceTree = "<group>"; };
 		16E68D67E88CB7EE24AFFABA068D7E24 /* Pods-beeper_exampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-beeper_exampleTests.debug.xcconfig"; sourceTree = "<group>"; };
-		21FF2AC81C7CB5EFE03BD992037A8718 /* Pods_beeper_exampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_beeper_exampleUITests.framework; path = "Pods-beeper_exampleUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E43AFC047D73D87CA1855418E152B3C /* Priority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Priority.swift; path = Source/Priority.swift; sourceTree = "<group>"; };
+		35E9910442BDAE26EC948299120D9508 /* Internal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Internal.swift; path = Source/Internal.swift; sourceTree = "<group>"; };
 		396EF08E58A9D8277BA802CDA3D18C1D /* Pods-beeper_exampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-beeper_exampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		464B7DC8722B8729B30CD2F56CF7B589 /* Pods-beeper_exampleUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-beeper_exampleUITests-umbrella.h"; sourceTree = "<group>"; };
 		477F1C4BD7A65F0D7DB5F0B3EFF6DBC2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		4FCDF9D07E07364AE6F52A5F21EBB0EE /* Pods_beeper_example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_beeper_example.framework; path = "Pods-beeper_example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AC6D69AF0117598D01B534355B04F9E /* Pods_beeper_exampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_beeper_exampleUITests.framework; path = "Pods-beeper_exampleUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A22493331B429A9C87E59B43F3B09AB /* Anchorage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Anchorage-prefix.pch"; sourceTree = "<group>"; };
+		5BD2505AA88845A4BEF0A5498F1F4EAD /* Anchorage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Anchorage.modulemap; sourceTree = "<group>"; };
 		66D5CA84CB3D18952CA70CBD489AB79B /* beeper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "beeper-prefix.pch"; sourceTree = "<group>"; };
+		6D9253CEC6DCBD3BEA65EF9956720B25 /* Compatability.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Compatability.swift; path = Source/Compatability.swift; sourceTree = "<group>"; };
+		704F8F19B876B4B5CFAA2E0A8534BC69 /* Anchorage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Anchorage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71131B8BB3D1CA4D339BD0147B857AAE /* beeper-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "beeper-Info.plist"; sourceTree = "<group>"; };
 		730EDC53B41FB33FBAE4050F633470CC /* Pods-beeper_example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-beeper_example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		738E29BBDEA8C88BC7440313A5505171 /* Pods-beeper_exampleTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-beeper_exampleTests-Info.plist"; sourceTree = "<group>"; };
 		761AF0F0BFA182ABB6CB3F087D1DCD7F /* Pods-beeper_exampleTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-beeper_exampleTests.modulemap"; sourceTree = "<group>"; };
+		7D2957C569C83146F1B5A60519BB7CE9 /* NSLayoutAnchor+MultiplierConstraints.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSLayoutAnchor+MultiplierConstraints.swift"; path = "Source/NSLayoutAnchor+MultiplierConstraints.swift"; sourceTree = "<group>"; };
+		7D312EB6C2681AFCAD104CD71A333093 /* AnchorGroupProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnchorGroupProvider.swift; path = Source/AnchorGroupProvider.swift; sourceTree = "<group>"; };
+		7FE3011866582C3241FB091CEF38AC1E /* Anchorage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Anchorage.xcconfig; sourceTree = "<group>"; };
 		7FEE5BE3409F6144D15D6AD5C7158977 /* Pods-beeper_exampleTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-beeper_exampleTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		8509A9B4FF686B83098BFB7E08300E65 /* Pods_beeper_example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_beeper_example.framework; path = "Pods-beeper_example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		963CA904A2181D28BC2299EF4AE13A87 /* Pods-beeper_exampleUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-beeper_exampleUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9BBAD8036F1EA0DDC5A50FA16E5D8357 /* Anchorage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Anchorage.framework; path = Anchorage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9F479978A8FD8E9D179E3FC53FD73EF5 /* Pods-beeper_exampleUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-beeper_exampleUITests-dummy.m"; sourceTree = "<group>"; };
-		A08F394D66380C5A2EFA7EA03532A7E6 /* Pods_beeper_exampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_beeper_exampleTests.framework; path = "Pods-beeper_exampleTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A0A3E199E8269F16B54EE2D454D9CA53 /* beeper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = beeper.framework; path = beeper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1D8E7885A6F022C0ABCAA9BA2F0EF56 /* Anchorage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Anchorage-dummy.m"; sourceTree = "<group>"; };
 		AA4D3786244E3B48DC711468869715F5 /* Pods-beeper_exampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-beeper_exampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		AD4A5E781916EE19BDBBD93CBD6D8D44 /* Pods-beeper_exampleTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-beeper_exampleTests-dummy.m"; sourceTree = "<group>"; };
 		ADF6AE649FA47E85DF2378C842512C9D /* Pods-beeper_example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-beeper_example-dummy.m"; sourceTree = "<group>"; };
 		B65C20BD8D01C7BE5165EB10DD9EF06E /* Pods-beeper_example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-beeper_example-acknowledgements.plist"; sourceTree = "<group>"; };
+		BCB003BBB47B8A9B7F862F6E960CCC80 /* Anchorage-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Anchorage-umbrella.h"; sourceTree = "<group>"; };
+		BCE1B07F10C33E79E381D0A3003A5AA5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		C2C3704A6337F26959E30A47BC035821 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		C448D26A7608A5AC4E20957DBC518D82 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		CA6FDD0B0B2F71FEC0877B79D3A9BDCC /* Pods-beeper_exampleUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-beeper_exampleUITests-Info.plist"; sourceTree = "<group>"; };
 		CF53421B0790CAC329978AC660118112 /* Pods-beeper_exampleUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-beeper_exampleUITests.modulemap"; sourceTree = "<group>"; };
 		CFC840D5CAC85E48DF2D0F2FF2088187 /* beeper.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = beeper.xcconfig; sourceTree = "<group>"; };
@@ -83,24 +120,17 @@
 		DD5974F6F85021FC08931B6C36F032B3 /* Pods-beeper_example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-beeper_example-Info.plist"; sourceTree = "<group>"; };
 		E2FED7B4508316509B4D66834C5609AB /* Pods-beeper_example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-beeper_example.release.xcconfig"; sourceTree = "<group>"; };
 		E3C4795F574FD1E9A5AA0DC268B12FD0 /* Pods-beeper_exampleTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-beeper_exampleTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E52458BDC6F82A2A58ED5EBDD6B538FD /* Anchorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Anchorage.swift; path = Source/Anchorage.swift; sourceTree = "<group>"; };
 		EAF129512FE85435D891AE54F6CEB4DA /* beeper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "beeper-umbrella.h"; sourceTree = "<group>"; };
 		EAFC09BEDB6A7AE5A92A43E5F9763B51 /* beeper.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = beeper.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		EC46D345EA4F019AC1B07D67D47B8AC3 /* beeper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = beeper.swift; path = Sources/beeper.swift; sourceTree = "<group>"; };
-		ECF2A2B0720AE923C22BED3192888BE0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		EE4E9492061324F2338D224FB1D894EA /* Pods-beeper_example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-beeper_example.modulemap"; sourceTree = "<group>"; };
 		EEA666A2A8804E6F1BEF2304032F08AC /* beeper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "beeper-dummy.m"; sourceTree = "<group>"; };
 		FACD477428C04E65B74DAD268B4AC470 /* Pods-beeper_exampleUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-beeper_exampleUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		FE728A17F9F38BC3363F4E4710087F44 /* Pods_beeper_exampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_beeper_exampleTests.framework; path = "Pods-beeper_exampleTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4117462333FD918C17A79ABB849A7A7E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				397F99CC2AB21F945C4D3708580F8D99 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		7A5F271039B042F5C5619A58C95267C5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -109,12 +139,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		821AC50B3AE700D930B80311F1F43B85 /* Frameworks */ = {
+		7BEA4BF1511F952794A7A8E3DB3D7846 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				727E4DADA74BC051FB0DA0A14000CF02 /* Foundation.framework in Frameworks */,
-				C8B681A31BD8D535B60311DB20811CB9 /* UIKit.framework in Frameworks */,
+				E8D430F39A1D8CF1A26D09B826EBE50D /* Anchorage.framework in Frameworks */,
+				AE1E2131DE988F9F00C87328C7B13315 /* Foundation.framework in Frameworks */,
+				15097ECCBCC6821E6F9D736AE1241BCB /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFB23508F4E60A297E208AE92DC338B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3D4725DCA700493E48402C225360E23 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8FA110DDC092925010FBCBDDBD4605C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				487A0D6F371227EF9F2D69FE3D311FC0 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,10 +192,19 @@
 			path = "Target Support Files/Pods-beeper_exampleTests";
 			sourceTree = "<group>";
 		};
-		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+		0FC101D5E4B2D6FB5D7A37F01B6C185C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				E169A450ED27AC725DF52953F66D11E0 /* iOS */,
+				F4B92A149A9D5D8D3043E8D9C08C574E /* Anchorage */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		15D880CAB00840655439C473305123C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				704F8F19B876B4B5CFAA2E0A8534BC69 /* Anchorage.framework */,
+				FDC7FACB15EDA4CD616580DB2301AACD /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -168,17 +224,6 @@
 			);
 			name = "Pods-beeper_example";
 			path = "Target Support Files/Pods-beeper_example";
-			sourceTree = "<group>";
-		};
-		42676BCB26ECA8933475589B26303E0D /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				A0A3E199E8269F16B54EE2D454D9CA53 /* beeper.framework */,
-				4FCDF9D07E07364AE6F52A5F21EBB0EE /* Pods_beeper_example.framework */,
-				A08F394D66380C5A2EFA7EA03532A7E6 /* Pods_beeper_exampleTests.framework */,
-				21FF2AC81C7CB5EFE03BD992037A8718 /* Pods_beeper_exampleUITests.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		5534A54AA4D5720E0225DEBCECE69B4B /* Pods-beeper_exampleUITests */ = {
@@ -214,6 +259,32 @@
 			);
 			name = beeper;
 			path = ../..;
+			sourceTree = "<group>";
+		};
+		8FC128EEAD51D9DA1BFECCDA05B6999F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9BBAD8036F1EA0DDC5A50FA16E5D8357 /* Anchorage.framework */,
+				06EF4DD389165A57BF142ECAD400AB60 /* beeper.framework */,
+				8509A9B4FF686B83098BFB7E08300E65 /* Pods_beeper_example.framework */,
+				FE728A17F9F38BC3363F4E4710087F44 /* Pods_beeper_exampleTests.framework */,
+				4AC6D69AF0117598D01B534355B04F9E /* Pods_beeper_exampleUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A443F00E75788E8E13AB1A003706E48E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5BD2505AA88845A4BEF0A5498F1F4EAD /* Anchorage.modulemap */,
+				7FE3011866582C3241FB091CEF38AC1E /* Anchorage.xcconfig */,
+				A1D8E7885A6F022C0ABCAA9BA2F0EF56 /* Anchorage-dummy.m */,
+				04DC24C72057D2DCBC482C6D9FF8B3E2 /* Anchorage-Info.plist */,
+				5A22493331B429A9C87E59B43F3B09AB /* Anchorage-prefix.pch */,
+				BCB003BBB47B8A9B7F862F6E960CCC80 /* Anchorage-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Anchorage";
 			sourceTree = "<group>";
 		};
 		A451E0E3A075D30DA67E09490F50D624 /* Targets Support Files */ = {
@@ -255,17 +326,33 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				75AF0040621F7E796D2035D5A6B51184 /* Development Pods */,
-				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
-				42676BCB26ECA8933475589B26303E0D /* Products */,
+				15D880CAB00840655439C473305123C5 /* Frameworks */,
+				0FC101D5E4B2D6FB5D7A37F01B6C185C /* Pods */,
+				8FC128EEAD51D9DA1BFECCDA05B6999F /* Products */,
 				A451E0E3A075D30DA67E09490F50D624 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		E169A450ED27AC725DF52953F66D11E0 /* iOS */ = {
+		F4B92A149A9D5D8D3043E8D9C08C574E /* Anchorage */ = {
 			isa = PBXGroup;
 			children = (
-				40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */,
-				ECF2A2B0720AE923C22BED3192888BE0 /* UIKit.framework */,
+				E52458BDC6F82A2A58ED5EBDD6B538FD /* Anchorage.swift */,
+				7D312EB6C2681AFCAD104CD71A333093 /* AnchorGroupProvider.swift */,
+				6D9253CEC6DCBD3BEA65EF9956720B25 /* Compatability.swift */,
+				35E9910442BDAE26EC948299120D9508 /* Internal.swift */,
+				7D2957C569C83146F1B5A60519BB7CE9 /* NSLayoutAnchor+MultiplierConstraints.swift */,
+				1E43AFC047D73D87CA1855418E152B3C /* Priority.swift */,
+				A443F00E75788E8E13AB1A003706E48E /* Support Files */,
+			);
+			name = Anchorage;
+			path = Anchorage;
+			sourceTree = "<group>";
+		};
+		FDC7FACB15EDA4CD616580DB2301AACD /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				BCE1B07F10C33E79E381D0A3003A5AA5 /* Foundation.framework */,
+				C448D26A7608A5AC4E20957DBC518D82 /* UIKit.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
@@ -273,11 +360,19 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		186C282FDDCF40EA6C25DF3CDAF76365 /* Headers */ = {
+		4FDFFE68E85320BAA434C47EDB565924 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				16B8A11326A88F6459C8F4BDB679A64A /* Pods-beeper_example-umbrella.h in Headers */,
+				9F216A620CA3C2C016ACA2F29584BD50 /* Anchorage-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		924B7C9876E968F30122855BE6120598 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FC321984447ACD1FC2725C9AC8561E6 /* beeper-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,33 +392,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F58466A788B7893473AF7920C1E679C3 /* Headers */ = {
+		EBA5E5AEAC6DADB7D76E746E881AEAB2 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18CA8AB3C3F5A4D34488D4761F7869A6 /* beeper-umbrella.h in Headers */,
+				B56857D4AC6ACEE4BE028AFC7AB78806 /* Pods-beeper_example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		26DD71070B8AA9A7453233E59E2D9472 /* beeper */ = {
+		1592B5CE13E920B3E53BC558F0638F19 /* Pods-beeper_example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F1D7DE62DCC59D33D37656CE801236B6 /* Build configuration list for PBXNativeTarget "beeper" */;
+			buildConfigurationList = 6B823871591710D557ACCA4E2BE91AC4 /* Build configuration list for PBXNativeTarget "Pods-beeper_example" */;
 			buildPhases = (
-				F58466A788B7893473AF7920C1E679C3 /* Headers */,
-				86126DA0E5143496CD7422186CF694EF /* Sources */,
-				821AC50B3AE700D930B80311F1F43B85 /* Frameworks */,
-				5698029522BCC9E161B780F6066FB388 /* Resources */,
+				EBA5E5AEAC6DADB7D76E746E881AEAB2 /* Headers */,
+				1680E67E00202ACD09CB8F78313E451F /* Sources */,
+				BFB23508F4E60A297E208AE92DC338B9 /* Frameworks */,
+				9AC17D7A37002D64E04B77222252F875 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				171AC545A406A05CC58056FA21B2A66D /* PBXTargetDependency */,
+				556513461D7C1BA66441F893FE186281 /* PBXTargetDependency */,
 			);
-			name = beeper;
-			productName = beeper;
-			productReference = A0A3E199E8269F16B54EE2D454D9CA53 /* beeper.framework */;
+			name = "Pods-beeper_example";
+			productName = "Pods-beeper_example";
+			productReference = 8509A9B4FF686B83098BFB7E08300E65 /* Pods_beeper_example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		39E27C60EBE455FEB6D6D0614671128F /* Pods-beeper_exampleUITests */ = {
@@ -342,26 +439,25 @@
 			);
 			name = "Pods-beeper_exampleUITests";
 			productName = "Pods-beeper_exampleUITests";
-			productReference = 21FF2AC81C7CB5EFE03BD992037A8718 /* Pods_beeper_exampleUITests.framework */;
+			productReference = 4AC6D69AF0117598D01B534355B04F9E /* Pods_beeper_exampleUITests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		6C31C723A7D40000FF0D69E7097BD9FF /* Pods-beeper_example */ = {
+		80E0C7D6ACE5972BAA95E5AF9EBAE4FA /* Anchorage */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 35E24DEF9C1AE50183D0E4B76B57DCDB /* Build configuration list for PBXNativeTarget "Pods-beeper_example" */;
+			buildConfigurationList = EB8F793745CE581E3E730091CED16050 /* Build configuration list for PBXNativeTarget "Anchorage" */;
 			buildPhases = (
-				186C282FDDCF40EA6C25DF3CDAF76365 /* Headers */,
-				32DD7971003F72846A2D460176B00153 /* Sources */,
-				4117462333FD918C17A79ABB849A7A7E /* Frameworks */,
-				C03EAD82B6B139BB2BAD562B451E5FD7 /* Resources */,
+				4FDFFE68E85320BAA434C47EDB565924 /* Headers */,
+				13F431CDCC2CF9D5AC890A60C2FF2434 /* Sources */,
+				D8FA110DDC092925010FBCBDDBD4605C /* Frameworks */,
+				D1A617362981B4F963EF191A5D2CF7B5 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				368B6E8A7542D87EC44D89C89FEE8A59 /* PBXTargetDependency */,
 			);
-			name = "Pods-beeper_example";
-			productName = "Pods-beeper_example";
-			productReference = 4FCDF9D07E07364AE6F52A5F21EBB0EE /* Pods_beeper_example.framework */;
+			name = Anchorage;
+			productName = Anchorage;
+			productReference = 9BBAD8036F1EA0DDC5A50FA16E5D8357 /* Anchorage.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		B528A2092D32C8CAF988E3D42FA46423 /* Pods-beeper_exampleTests */ = {
@@ -380,7 +476,26 @@
 			);
 			name = "Pods-beeper_exampleTests";
 			productName = "Pods-beeper_exampleTests";
-			productReference = A08F394D66380C5A2EFA7EA03532A7E6 /* Pods_beeper_exampleTests.framework */;
+			productReference = FE728A17F9F38BC3363F4E4710087F44 /* Pods_beeper_exampleTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E92402B2248427A7DC44A4A98B1818F9 /* beeper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 304ED9ECBCEF0810C3698BE4D52A7A39 /* Build configuration list for PBXNativeTarget "beeper" */;
+			buildPhases = (
+				924B7C9876E968F30122855BE6120598 /* Headers */,
+				77E84D694D3C2C1755C55C0320F50E14 /* Sources */,
+				7BEA4BF1511F952794A7A8E3DB3D7846 /* Frameworks */,
+				CE9BCC2D0D89FB4F6E22B4F9430EC67A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A1826F2AFE57FD9F32B81EEB619580D3 /* PBXTargetDependency */,
+			);
+			name = beeper;
+			productName = beeper;
+			productReference = 06EF4DD389165A57BF142ECAD400AB60 /* beeper.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -400,12 +515,13 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 42676BCB26ECA8933475589B26303E0D /* Products */;
+			productRefGroup = 8FC128EEAD51D9DA1BFECCDA05B6999F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				26DD71070B8AA9A7453233E59E2D9472 /* beeper */,
-				6C31C723A7D40000FF0D69E7097BD9FF /* Pods-beeper_example */,
+				80E0C7D6ACE5972BAA95E5AF9EBAE4FA /* Anchorage */,
+				E92402B2248427A7DC44A4A98B1818F9 /* beeper */,
+				1592B5CE13E920B3E53BC558F0638F19 /* Pods-beeper_example */,
 				B528A2092D32C8CAF988E3D42FA46423 /* Pods-beeper_exampleTests */,
 				39E27C60EBE455FEB6D6D0614671128F /* Pods-beeper_exampleUITests */,
 			);
@@ -420,7 +536,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5698029522BCC9E161B780F6066FB388 /* Resources */ = {
+		9AC17D7A37002D64E04B77222252F875 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -434,7 +550,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C03EAD82B6B139BB2BAD562B451E5FD7 /* Resources */ = {
+		CE9BCC2D0D89FB4F6E22B4F9430EC67A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1A617362981B4F963EF191A5D2CF7B5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -444,11 +567,25 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		32DD7971003F72846A2D460176B00153 /* Sources */ = {
+		13F431CDCC2CF9D5AC890A60C2FF2434 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				668183717BE6312EC990B67E8E35D79F /* Pods-beeper_example-dummy.m in Sources */,
+				4352962C236E33C5745AEE2BF3F707C5 /* Anchorage-dummy.m in Sources */,
+				F22263BFB78EF8CF86BB784676A29E85 /* Anchorage.swift in Sources */,
+				8963CE70E9096090E1AA85DE3BD6A92B /* AnchorGroupProvider.swift in Sources */,
+				6D665F71CD1786D03FF1A0B3424A14AF /* Compatability.swift in Sources */,
+				CE77CC436CD4BC7CE123C85858DAE6A9 /* Internal.swift in Sources */,
+				E459D3D46A07A7C35A5E8A207EAEF765 /* NSLayoutAnchor+MultiplierConstraints.swift in Sources */,
+				7721B0D946CC60EAC47227C14E195BD7 /* Priority.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1680E67E00202ACD09CB8F78313E451F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52A2D3BA9B8CFA3FDBF477EAC6FCCBCE /* Pods-beeper_example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,12 +597,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		86126DA0E5143496CD7422186CF694EF /* Sources */ = {
+		77E84D694D3C2C1755C55C0320F50E14 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C65CC3D9D23345D0DDA4013A4B7DDE2 /* beeper-dummy.m in Sources */,
-				B0BA1FC9C08AAB534125F82E23DEA67E /* beeper.swift in Sources */,
+				B0A109404BF07AD2CE34DCCEFC129554 /* beeper-dummy.m in Sources */,
+				9F2DBB77EC85600B275C14A95D06C55A /* beeper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,62 +617,39 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		368B6E8A7542D87EC44D89C89FEE8A59 /* PBXTargetDependency */ = {
+		171AC545A406A05CC58056FA21B2A66D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Anchorage;
+			target = 80E0C7D6ACE5972BAA95E5AF9EBAE4FA /* Anchorage */;
+			targetProxy = DC8E9AE2B4D91D35432EB5C29AC7F5E8 /* PBXContainerItemProxy */;
+		};
+		556513461D7C1BA66441F893FE186281 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = beeper;
-			target = 26DD71070B8AA9A7453233E59E2D9472 /* beeper */;
-			targetProxy = 7CD779AB757260891AAA99225D967261 /* PBXContainerItemProxy */;
+			target = E92402B2248427A7DC44A4A98B1818F9 /* beeper */;
+			targetProxy = 8699FCE264BF87622BA3E566978C38E2 /* PBXContainerItemProxy */;
+		};
+		A1826F2AFE57FD9F32B81EEB619580D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Anchorage;
+			target = 80E0C7D6ACE5972BAA95E5AF9EBAE4FA /* Anchorage */;
+			targetProxy = 372A38FDE5C3FC3DD011B273818B20CD /* PBXContainerItemProxy */;
 		};
 		BD49C3B232DF7EB92277D2A488BAF962 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-beeper_example";
-			target = 6C31C723A7D40000FF0D69E7097BD9FF /* Pods-beeper_example */;
+			target = 1592B5CE13E920B3E53BC558F0638F19 /* Pods-beeper_example */;
 			targetProxy = A875AFB862315FCD792E84B5CDCC78BA /* PBXContainerItemProxy */;
 		};
 		EB13BD19817F8C3836A113B92B40731F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-beeper_example";
-			target = 6C31C723A7D40000FF0D69E7097BD9FF /* Pods-beeper_example */;
+			target = 1592B5CE13E920B3E53BC558F0638F19 /* Pods-beeper_example */;
 			targetProxy = 8D08B8ECAE9881974012D8732908B875 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0EF4DD53E459BACBBDD07AB8F49E565A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CFC840D5CAC85E48DF2D0F2FF2088187 /* beeper.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/beeper/beeper-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/beeper/beeper-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/beeper/beeper.modulemap";
-				PRODUCT_MODULE_NAME = beeper;
-				PRODUCT_NAME = beeper;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		2B955BF4F4B4D4657B0078E1117543F6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AA4D3786244E3B48DC711468869715F5 /* Pods-beeper_exampleTests.release.xcconfig */;
@@ -652,45 +766,6 @@
 			};
 			name = Release;
 		};
-		438331F331CB456A5FFFE1734F24B03D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E2FED7B4508316509B4D66834C5609AB /* Pods-beeper_example.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-beeper_example/Pods-beeper_example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-beeper_example/Pods-beeper_example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		51254512647EAD45D22904186A791050 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 16E68D67E88CB7EE24AFFABA068D7E24 /* Pods-beeper_exampleTests.debug.xcconfig */;
@@ -729,7 +804,81 @@
 			};
 			name = Debug;
 		};
-		7B16947420716C4A3DEC6967C4582BE6 /* Debug */ = {
+		51C1F2CFE60949FA19967ACB44C0FECC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2FED7B4508316509B4D66834C5609AB /* Pods-beeper_example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-beeper_example/Pods-beeper_example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-beeper_example/Pods-beeper_example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6BEEB8B630FA4EE1F7746F11D3AD1EF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFC840D5CAC85E48DF2D0F2FF2088187 /* beeper.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/beeper/beeper-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/beeper/beeper-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/beeper/beeper.modulemap";
+				PRODUCT_MODULE_NAME = beeper;
+				PRODUCT_NAME = beeper;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7B0D9E0C1ABF3192E5E3B631381B3781 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 14CB559F41692BEEC775850D884B192A /* Pods-beeper_example.debug.xcconfig */;
 			buildSettings = {
@@ -827,7 +976,42 @@
 			};
 			name = Release;
 		};
-		C0D621946E5A6F60526AEC1A95D48233 /* Release */ = {
+		85A2E84D203DFDF60C456A01BC66A558 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FE3011866582C3241FB091CEF38AC1E /* Anchorage.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Anchorage/Anchorage-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Anchorage/Anchorage-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Anchorage/Anchorage.modulemap";
+				PRODUCT_MODULE_NAME = Anchorage;
+				PRODUCT_NAME = Anchorage;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AC8869D741E9B87D8B6A3292DFB2B288 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CFC840D5CAC85E48DF2D0F2FF2088187 /* beeper.xcconfig */;
 			buildSettings = {
@@ -927,14 +1111,50 @@
 			};
 			name = Debug;
 		};
+		FC203E76914A78D0C28CAA4365228392 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FE3011866582C3241FB091CEF38AC1E /* Anchorage.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Anchorage/Anchorage-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Anchorage/Anchorage-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Anchorage/Anchorage.modulemap";
+				PRODUCT_MODULE_NAME = Anchorage;
+				PRODUCT_NAME = Anchorage;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		35E24DEF9C1AE50183D0E4B76B57DCDB /* Build configuration list for PBXNativeTarget "Pods-beeper_example" */ = {
+		304ED9ECBCEF0810C3698BE4D52A7A39 /* Build configuration list for PBXNativeTarget "beeper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7B16947420716C4A3DEC6967C4582BE6 /* Debug */,
-				438331F331CB456A5FFFE1734F24B03D /* Release */,
+				6BEEB8B630FA4EE1F7746F11D3AD1EF2 /* Debug */,
+				AC8869D741E9B87D8B6A3292DFB2B288 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -944,6 +1164,15 @@
 			buildConfigurations = (
 				D0FE574C7B3479C6425BC136AA57D8C2 /* Debug */,
 				84A06F28E9E7D9EB0A9B476A8668FD60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B823871591710D557ACCA4E2BE91AC4 /* Build configuration list for PBXNativeTarget "Pods-beeper_example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B0D9E0C1ABF3192E5E3B631381B3781 /* Debug */,
+				51C1F2CFE60949FA19967ACB44C0FECC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -966,11 +1195,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F1D7DE62DCC59D33D37656CE801236B6 /* Build configuration list for PBXNativeTarget "beeper" */ = {
+		EB8F793745CE581E3E730091CED16050 /* Build configuration list for PBXNativeTarget "Anchorage" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0EF4DD53E459BACBBDD07AB8F49E565A /* Debug */,
-				C0D621946E5A6F60526AEC1A95D48233 /* Release */,
+				85A2E84D203DFDF60C456A01BC66A558 /* Debug */,
+				FC203E76914A78D0C28CAA4365228392 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
