@@ -1,0 +1,16 @@
+PODS:
+  - beeper (0.1)
+
+DEPENDENCIES:
+  - beeper (from `../`)
+
+EXTERNAL SOURCES:
+  beeper:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  beeper: 795953bdda03ed3d6429f665e188eea63c962064
+
+PODFILE CHECKSUM: 4bf419e5acdf8b4492e6d7eb16b27e509acc8ae4
+
+COCOAPODS: 1.6.1

@@ -1,0 +1,6 @@
+framework module Pods_beeper_example {
+  umbrella header "Pods-beeper_example-umbrella.h"
+
+  export *
+  module * { export * }
+}

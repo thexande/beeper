@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00FC1D25AAF5E7D62C7E9B3E /* Pods_beeper_exampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C104002C4ACA1DAA5B9F8E4A /* Pods_beeper_exampleUITests.framework */; };
+		261172D247FD256EB024349B /* Pods_beeper_example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5677AEEACA80FA929FFCBD6 /* Pods_beeper_example.framework */; };
+		A871258552E58279035A256B /* Pods_beeper_exampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6664059C5A717CCAEFB4DF09 /* Pods_beeper_exampleTests.framework */; };
 		B04FAC2E2262767700D65492 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04FAC2D2262767700D65492 /* AppDelegate.swift */; };
 		B04FAC302262767700D65492 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04FAC2F2262767700D65492 /* ViewController.swift */; };
 		B04FAC332262767700D65492 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B04FAC312262767700D65492 /* Main.storyboard */; };
@@ -34,6 +37,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		62AE61A30E5C958949969D4B /* Pods-beeper_exampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-beeper_exampleTests.debug.xcconfig"; path = "Target Support Files/Pods-beeper_exampleTests/Pods-beeper_exampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6664059C5A717CCAEFB4DF09 /* Pods_beeper_exampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_beeper_exampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A52E959F384D4B4C474586A /* Pods-beeper_example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-beeper_example.debug.xcconfig"; path = "Target Support Files/Pods-beeper_example/Pods-beeper_example.debug.xcconfig"; sourceTree = "<group>"; };
+		81427552C3DCF7CB5BB9350E /* Pods-beeper_exampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-beeper_exampleUITests.debug.xcconfig"; path = "Target Support Files/Pods-beeper_exampleUITests/Pods-beeper_exampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		99CC90A33EB3CDB758F0F03C /* Pods-beeper_exampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-beeper_exampleTests.release.xcconfig"; path = "Target Support Files/Pods-beeper_exampleTests/Pods-beeper_exampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		B04FAC2A2262767700D65492 /* beeper_example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = beeper_example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B04FAC2D2262767700D65492 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B04FAC2F2262767700D65492 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +55,10 @@
 		B04FAC492262767800D65492 /* beeper_exampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = beeper_exampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B04FAC4D2262767800D65492 /* beeper_exampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = beeper_exampleUITests.swift; sourceTree = "<group>"; };
 		B04FAC4F2262767800D65492 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C104002C4ACA1DAA5B9F8E4A /* Pods_beeper_exampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_beeper_exampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C276D08584B7161AE474A8EF /* Pods-beeper_example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-beeper_example.release.xcconfig"; path = "Target Support Files/Pods-beeper_example/Pods-beeper_example.release.xcconfig"; sourceTree = "<group>"; };
+		C5677AEEACA80FA929FFCBD6 /* Pods_beeper_example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_beeper_example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA44150EF74494A2A2AA1E28 /* Pods-beeper_exampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-beeper_exampleUITests.release.xcconfig"; path = "Target Support Files/Pods-beeper_exampleUITests/Pods-beeper_exampleUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				261172D247FD256EB024349B /* Pods_beeper_example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A871258552E58279035A256B /* Pods_beeper_exampleTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +82,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00FC1D25AAF5E7D62C7E9B3E /* Pods_beeper_exampleUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1767C767DC059E6303989486 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C5677AEEACA80FA929FFCBD6 /* Pods_beeper_example.framework */,
+				6664059C5A717CCAEFB4DF09 /* Pods_beeper_exampleTests.framework */,
+				C104002C4ACA1DAA5B9F8E4A /* Pods_beeper_exampleUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5EFF8A58649EEC42573601B9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6A52E959F384D4B4C474586A /* Pods-beeper_example.debug.xcconfig */,
+				C276D08584B7161AE474A8EF /* Pods-beeper_example.release.xcconfig */,
+				62AE61A30E5C958949969D4B /* Pods-beeper_exampleTests.debug.xcconfig */,
+				99CC90A33EB3CDB758F0F03C /* Pods-beeper_exampleTests.release.xcconfig */,
+				81427552C3DCF7CB5BB9350E /* Pods-beeper_exampleUITests.debug.xcconfig */,
+				EA44150EF74494A2A2AA1E28 /* Pods-beeper_exampleUITests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		B04FAC212262767700D65492 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +120,8 @@
 				B04FAC412262767800D65492 /* beeper_exampleTests */,
 				B04FAC4C2262767800D65492 /* beeper_exampleUITests */,
 				B04FAC2B2262767700D65492 /* Products */,
+				5EFF8A58649EEC42573601B9 /* Pods */,
+				1767C767DC059E6303989486 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,9 +173,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B04FAC522262767800D65492 /* Build configuration list for PBXNativeTarget "beeper_example" */;
 			buildPhases = (
+				21157941D6311DAE3B58F802 /* [CP] Check Pods Manifest.lock */,
 				B04FAC262262767700D65492 /* Sources */,
 				B04FAC272262767700D65492 /* Frameworks */,
 				B04FAC282262767700D65492 /* Resources */,
+				BC1B454CC2005A6F5C1C307A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +192,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B04FAC552262767800D65492 /* Build configuration list for PBXNativeTarget "beeper_exampleTests" */;
 			buildPhases = (
+				A6D39678C39B891C4E674D9F /* [CP] Check Pods Manifest.lock */,
 				B04FAC3A2262767800D65492 /* Sources */,
 				B04FAC3B2262767800D65492 /* Frameworks */,
 				B04FAC3C2262767800D65492 /* Resources */,
@@ -167,6 +211,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B04FAC582262767800D65492 /* Build configuration list for PBXNativeTarget "beeper_exampleUITests" */;
 			buildPhases = (
+				6FA29617CEF746108A95598C /* [CP] Check Pods Manifest.lock */,
 				B04FAC452262767800D65492 /* Sources */,
 				B04FAC462262767800D65492 /* Frameworks */,
 				B04FAC472262767800D65492 /* Resources */,
@@ -250,6 +295,97 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		21157941D6311DAE3B58F802 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-beeper_example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6FA29617CEF746108A95598C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-beeper_exampleUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6D39678C39B891C4E674D9F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-beeper_exampleTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC1B454CC2005A6F5C1C307A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-beeper_example/Pods-beeper_example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/beeper/beeper.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/beeper.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-beeper_example/Pods-beeper_example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B04FAC262262767700D65492 /* Sources */ = {
@@ -430,6 +566,7 @@
 		};
 		B04FAC532262767800D65492 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A52E959F384D4B4C474586A /* Pods-beeper_example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -448,6 +585,7 @@
 		};
 		B04FAC542262767800D65492 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C276D08584B7161AE474A8EF /* Pods-beeper_example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -466,6 +604,7 @@
 		};
 		B04FAC562262767800D65492 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62AE61A30E5C958949969D4B /* Pods-beeper_exampleTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +626,7 @@
 		};
 		B04FAC572262767800D65492 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99CC90A33EB3CDB758F0F03C /* Pods-beeper_exampleTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +648,7 @@
 		};
 		B04FAC592262767800D65492 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81427552C3DCF7CB5BB9350E /* Pods-beeper_exampleUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -528,6 +669,7 @@
 		};
 		B04FAC5A2262767800D65492 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA44150EF74494A2A2AA1E28 /* Pods-beeper_exampleUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

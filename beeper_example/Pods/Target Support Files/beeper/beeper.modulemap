@@ -1,0 +1,6 @@
+framework module beeper {
+  umbrella header "beeper-umbrella.h"
+
+  export *
+  module * { export * }
+}
