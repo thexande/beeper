@@ -12,7 +12,6 @@
 		A871258552E58279035A256B /* Pods_beeper_exampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6664059C5A717CCAEFB4DF09 /* Pods_beeper_exampleTests.framework */; };
 		B04FAC2E2262767700D65492 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04FAC2D2262767700D65492 /* AppDelegate.swift */; };
 		B04FAC302262767700D65492 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04FAC2F2262767700D65492 /* ViewController.swift */; };
-		B04FAC332262767700D65492 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B04FAC312262767700D65492 /* Main.storyboard */; };
 		B04FAC352262767800D65492 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B04FAC342262767800D65492 /* Assets.xcassets */; };
 		B04FAC382262767800D65492 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B04FAC362262767800D65492 /* LaunchScreen.storyboard */; };
 		B04FAC432262767800D65492 /* beeper_exampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04FAC422262767800D65492 /* beeper_exampleTests.swift */; };
@@ -45,7 +44,6 @@
 		B04FAC2A2262767700D65492 /* beeper_example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = beeper_example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B04FAC2D2262767700D65492 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B04FAC2F2262767700D65492 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B04FAC322262767700D65492 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B04FAC342262767800D65492 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B04FAC372262767800D65492 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B04FAC392262767800D65492 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -109,7 +107,6 @@
 				81427552C3DCF7CB5BB9350E /* Pods-beeper_exampleUITests.debug.xcconfig */,
 				EA44150EF74494A2A2AA1E28 /* Pods-beeper_exampleUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -140,7 +137,6 @@
 			children = (
 				B04FAC2D2262767700D65492 /* AppDelegate.swift */,
 				B04FAC2F2262767700D65492 /* ViewController.swift */,
-				B04FAC312262767700D65492 /* Main.storyboard */,
 				B04FAC342262767800D65492 /* Assets.xcassets */,
 				B04FAC362262767800D65492 /* LaunchScreen.storyboard */,
 				B04FAC392262767800D65492 /* Info.plist */,
@@ -276,7 +272,6 @@
 			files = (
 				B04FAC382262767800D65492 /* LaunchScreen.storyboard in Resources */,
 				B04FAC352262767800D65492 /* Assets.xcassets in Resources */,
-				B04FAC332262767700D65492 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,14 +426,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B04FAC312262767700D65492 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B04FAC322262767700D65492 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B04FAC362262767800D65492 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

@@ -4,6 +4,7 @@ PODS:
     - Anchorage
 
 DEPENDENCIES:
+  - Anchorage
   - beeper (from `../`)
 
 SPEC REPOS:
@@ -18,6 +19,6 @@ SPEC CHECKSUMS:
   Anchorage: 21a98675245188427f0bcea21404d42a824a766f
   beeper: e29920bae890a5821d1e17510c42ebe55ecb5df0
 
-PODFILE CHECKSUM: 4bf419e5acdf8b4492e6d7eb16b27e509acc8ae4
+PODFILE CHECKSUM: 8cb713bb73ac6d13656af24707538da966a369fd
 
 COCOAPODS: 1.6.1

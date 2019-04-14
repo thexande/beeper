@@ -7,6 +7,7 @@ target 'beeper_example' do
 
   # Pods for beeper_example
   pod 'beeper', :path => '../'
+  pod 'Anchorage'
 
   target 'beeper_exampleTests' do
     inherit! :search_paths

@@ -82,16 +82,7 @@ class WrapperCollectionViewCell<T: UIView & Reusable>: UICollectionViewCell {
     override init(frame: CGRect) {
         super.init(frame: frame)
         contentView.addSubview(wrapped)
-        wrapped.translatesAutoresizingMaskIntoConstraints = false
-        
-        NSLayoutConstraint.constraints(withVisualFormat: "V:|-0-[wrapped]-0-|",
-                                       options: [],
-                                       metrics: [:],
-                                       views: ["wrapped":wrapped])
-        NSLayoutConstraint.constraints(withVisualFormat: "H:|-0-[wrapped]-0-|",
-                                       options: [],
-                                       metrics: [:],
-                                       views: ["wrapped":wrapped])
+        wrapped.edgeAnchors == contentView.edgeAnchors
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -99,13 +90,30 @@ class WrapperCollectionViewCell<T: UIView & Reusable>: UICollectionViewCell {
     }
 }
 
-final class PagerViewController: UIViewController {
+open class PagerViewController: UIViewController {
     
     private let tagBarView = TagBarView()
     private let pager = PagerView()
     
-    override func viewDidLoad() {
+    public weak var delegate: PagerViewDelegate? {
+        didSet {
+            pager.delegate = delegate
+        }
+    }
+    
+    public weak var datasource: PagerViewDatasource? {
+        didSet {
+            pager.datasource = datasource
+        }
+    }
+    
+    public func reloadData() {
+        pager.collection.reloadData()
+    }
+    
+    open override func viewDidLoad() {
         super.viewDidLoad()
+    
         [tagBarView, pager].forEach {
             view.addSubview($0)
             $0.horizontalAnchors == view.horizontalAnchors
@@ -128,7 +136,7 @@ final class PagerViewController: UIViewController {
 
 public final class PagerView: UIView {
     
-    private let collection = UICollectionView(frame: .zero,
+    let collection = UICollectionView(frame: .zero,
                                               collectionViewLayout: UICollectionViewFlowLayout())
     private let sectionController = PagerViewSectionController()
     
@@ -147,15 +155,13 @@ public final class PagerView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         addSubview(collection)
-        collection.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.constraints(withVisualFormat: "V:|-0-[collection]-0-|",
-                                       options: [],
-                                       metrics: [:],
-                                       views: ["collection":collection])
-        NSLayoutConstraint.constraints(withVisualFormat: "H:|-0-[collection]-0-|",
-                                       options: [],
-                                       metrics: [:],
-                                       views: ["collection":collection])
+        collection.delegate = sectionController
+        collection.dataSource = sectionController
+        collection.isPagingEnabled = true
+        PagerViewSectionController.register(with: collection)
+        collection.edgeAnchors == edgeAnchors
+        
+        (collection.collectionViewLayout as? UICollectionViewFlowLayout)?.scrollDirection = .horizontal
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -180,6 +186,18 @@ final class PagerViewSectionController: NSObject, CollectionViewSectionControlle
     }
     
     func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView,
                         numberOfItemsInSection section: Int) -> Int {
         return datasource?.numberOfPages() ?? 0
     }
@@ -193,15 +211,8 @@ final class PagerViewSectionController: NSObject, CollectionViewSectionControlle
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: UICollectionViewCell.identifier, for: indexPath)
         cell.contentView.addSubview(view)
-        view.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.constraints(withVisualFormat: "V:|-0-[view]-0-|",
-                                       options: [],
-                                       metrics: [:],
-                                       views: ["view":view])
-        NSLayoutConstraint.constraints(withVisualFormat: "H:|-0-[view]-0-|",
-                                       options: [],
-                                       metrics: [:],
-                                       views: ["view":view])
+    
+        view.edgeAnchors == cell.contentView.edgeAnchors
         return cell
     }
     
