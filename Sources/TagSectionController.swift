@@ -2,6 +2,7 @@ final class TagSectionController: NSObject, CollectionViewSectionController {
     
     weak var delegate: PagerViewDelegate?
     weak var datasource: PagerViewDatasource?
+    var inset: UIEdgeInsets = .init(top: 0, left: 12, bottom: 0, right: 12)
     
     private final class Cell: WrapperCollectionViewCell<TagView> { }
     
@@ -21,12 +22,33 @@ final class TagSectionController: NSObject, CollectionViewSectionController {
                                                                 return UICollectionViewCell()
         }
         cell.wrapped.render(delegate?.titleForPage(at: indexPath.item) ?? "")
+        cell.wrapped.layoutMargins = inset
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return .init(width: 100, height: collectionView.frame.height)
+        let title = delegate?.titleForPage(at: indexPath.item) ?? ""
+        let width = title.size(withAttributes:[.font: UIFont.systemFont(ofSize:18.0)]).width + inset.left + inset.right
+        return .init(width: width, height: collectionView.frame.height)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        insetForSectionAt section: Int) -> UIEdgeInsets {
+        return .zero
+    }
+    
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 0
     }
 }

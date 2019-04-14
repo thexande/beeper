@@ -12,7 +12,7 @@ final class TagView: UIView, ViewRendering, Reusable {
     override init(frame: CGRect) {
         super.init(frame: frame)
         addSubview(title)
-        title.edgeAnchors == edgeAnchors
+        title.edgeAnchors == layoutMarginsGuide.edgeAnchors
         backgroundColor = .white
     }
     

@@ -2,6 +2,18 @@ import Anchorage
 
 final class TagBarView: UIView, ViewRendering {
     
+    public struct Configuration {
+        let tagFont: UIFont
+        let tagTextColor: UIColor
+        let tagInset: UIEdgeInsets
+        
+        public init(tagFont: UIFont, tagTextColor: UIColor, tagInset: UIEdgeInsets) {
+            self.tagFont = tagFont
+            self.tagTextColor = tagTextColor
+            self.tagInset = tagInset
+        }
+    }
+    
     private class TagCell: WrapperCollectionViewCell<TagView> { }
     let collection = UICollectionView(frame: .zero,
                                       collectionViewLayout: UICollectionViewFlowLayout())
@@ -33,6 +45,8 @@ final class TagBarView: UIView, ViewRendering {
         collection.delegate = tagSection
         collection.dataSource = tagSection
         collection.edgeAnchors == edgeAnchors
+        collection.backgroundColor = .white
+        collection.showsHorizontalScrollIndicator = false
         TagSectionController.register(with: collection)
         
         (collection.collectionViewLayout as? UICollectionViewFlowLayout)?.scrollDirection = .horizontal
