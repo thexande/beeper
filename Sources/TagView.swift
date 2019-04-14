@@ -1,3 +1,5 @@
+import Anchorage
+
 final class TagView: UIView, ViewRendering, Reusable {
     
     typealias Properties = String

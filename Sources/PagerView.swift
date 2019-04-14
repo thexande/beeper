@@ -1,3 +1,5 @@
+import Anchorage
+
 public final class PagerView: UIView {
     
     let collection = UICollectionView(frame: .zero,

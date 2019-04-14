@@ -1,3 +1,5 @@
+import Anchorage
+
 final class TagBarView: UIView, ViewRendering {
     
     private class TagCell: WrapperCollectionViewCell<TagView> { }

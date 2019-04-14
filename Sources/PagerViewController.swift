@@ -1,3 +1,5 @@
+import Anchorage
+
 open class PagerViewController: UIViewController {
     
     private let tagBarView = TagBarView()
