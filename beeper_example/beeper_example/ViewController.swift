@@ -34,7 +34,7 @@ struct Dummy {
 }
 
 
-class ViewController: PagerViewController  {
+class ViewController: PagerViewController {
     
     struct Properties {
         
@@ -61,6 +61,8 @@ class ViewController: PagerViewController  {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        title = "Beeper View Pager Example"
         
         properties = Dummy.properties
         delegate = self
@@ -91,6 +93,7 @@ final class ListView: UIView, ViewRendering {
     typealias Properties = [ViewController.Properties.Page.Section]
     private let table = UITableView(frame: .zero, style: .grouped)
     var properties: Properties = []
+    var onSelect: (() -> Void)?
     
     func render(_ properties: [ViewController.Properties.Page.Section]) {
         self.properties = properties
@@ -103,8 +106,19 @@ final class ListView: UIView, ViewRendering {
         table.edgeAnchors == edgeAnchors
         table.delegate = self
         table.dataSource = self
-        table.register(UITableViewCell.self,
-                       forCellReuseIdentifier: String(describing: UITableViewCell.self))
+        table.register(ListCell.self,
+                       forCellReuseIdentifier: String(describing: ListCell.self))
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+}
+
+final class ListCell: UITableViewCell {
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+        super.init(style: .subtitle, reuseIdentifier: reuseIdentifier)
+        detailTextLabel?.numberOfLines = 0
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -125,13 +139,22 @@ extension ListView: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView,
                    cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: UITableViewCell.self))
-        cell?.textLabel?.text = properties[indexPath.section].rows[indexPath.row].title
-        cell?.detailTextLabel?.text = properties[indexPath.section].rows[indexPath.row].subtitle
-        return cell ?? UITableViewCell()
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: ListCell.self)) as? ListCell else {
+            return UITableViewCell()
+        }
+        
+        cell.textLabel?.text = properties[indexPath.section].rows[indexPath.row].title
+        cell.detailTextLabel?.text = properties[indexPath.section].rows[indexPath.row].subtitle
+        return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        onSelect?()
+    }
     
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return properties[section].title
+    }
 }
 
 protocol ViewRendering {
