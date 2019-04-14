@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -21,9 +21,16 @@
 		8963CE70E9096090E1AA85DE3BD6A92B /* AnchorGroupProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D312EB6C2681AFCAD104CD71A333093 /* AnchorGroupProvider.swift */; };
 		8DFBB5F0DF537F58EA7A7684C7506D65 /* Pods-beeper_exampleUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F479978A8FD8E9D179E3FC53FD73EF5 /* Pods-beeper_exampleUITests-dummy.m */; };
 		9F216A620CA3C2C016ACA2F29584BD50 /* Anchorage-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BCB003BBB47B8A9B7F862F6E960CCC80 /* Anchorage-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9F2DBB77EC85600B275C14A95D06C55A /* beeper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC46D345EA4F019AC1B07D67D47B8AC3 /* beeper.swift */; };
+		9F2DBB77EC85600B275C14A95D06C55A /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC46D345EA4F019AC1B07D67D47B8AC3 /* Protocols.swift */; };
 		AE1E2131DE988F9F00C87328C7B13315 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCE1B07F10C33E79E381D0A3003A5AA5 /* Foundation.framework */; };
 		B0A109404BF07AD2CE34DCCEFC129554 /* beeper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EEA666A2A8804E6F1BEF2304032F08AC /* beeper-dummy.m */; };
+		B0C6F9762262CCEC00430428 /* TagSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C6F9752262CCEC00430428 /* TagSectionController.swift */; };
+		B0C6F9782262CD1000430428 /* TagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C6F9772262CD1000430428 /* TagView.swift */; };
+		B0C6F97A2262CD2A00430428 /* TagBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C6F9792262CD2A00430428 /* TagBarView.swift */; };
+		B0C6F97C2262CD3F00430428 /* WrapperCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C6F97B2262CD3F00430428 /* WrapperCollectionViewCell.swift */; };
+		B0C6F97E2262CD7A00430428 /* PagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C6F97D2262CD7A00430428 /* PagerViewController.swift */; };
+		B0C6F9802262CD9400430428 /* PagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C6F97F2262CD9400430428 /* PagerView.swift */; };
+		B0C6F9822262CDAC00430428 /* PagerViewSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C6F9812262CDAC00430428 /* PagerViewSectionController.swift */; };
 		B56857D4AC6ACEE4BE028AFC7AB78806 /* Pods-beeper_example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 10227AD608E7D1862E7A3F18B739DAFE /* Pods-beeper_example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CE77CC436CD4BC7CE123C85858DAE6A9 /* Internal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E9910442BDAE26EC948299120D9508 /* Internal.swift */; };
 		E3D4725DCA700493E48402C225360E23 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCE1B07F10C33E79E381D0A3003A5AA5 /* Foundation.framework */; };
@@ -73,7 +80,7 @@
 
 /* Begin PBXFileReference section */
 		04DC24C72057D2DCBC482C6D9FF8B3E2 /* Anchorage-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Anchorage-Info.plist"; sourceTree = "<group>"; };
-		06EF4DD389165A57BF142ECAD400AB60 /* beeper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = beeper.framework; path = beeper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		06EF4DD389165A57BF142ECAD400AB60 /* beeper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = beeper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CB61EBC493B03C09FE7C93B06828A53 /* Pods-beeper_example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-beeper_example-frameworks.sh"; sourceTree = "<group>"; };
 		10227AD608E7D1862E7A3F18B739DAFE /* Pods-beeper_example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-beeper_example-umbrella.h"; sourceTree = "<group>"; };
 		140B2F7CD853E06A508B40E1885BDDC4 /* beeper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = beeper.modulemap; sourceTree = "<group>"; };
@@ -83,8 +90,8 @@
 		35E9910442BDAE26EC948299120D9508 /* Internal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Internal.swift; path = Source/Internal.swift; sourceTree = "<group>"; };
 		396EF08E58A9D8277BA802CDA3D18C1D /* Pods-beeper_exampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-beeper_exampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		464B7DC8722B8729B30CD2F56CF7B589 /* Pods-beeper_exampleUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-beeper_exampleUITests-umbrella.h"; sourceTree = "<group>"; };
-		477F1C4BD7A65F0D7DB5F0B3EFF6DBC2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		4AC6D69AF0117598D01B534355B04F9E /* Pods_beeper_exampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_beeper_exampleUITests.framework; path = "Pods-beeper_exampleUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		477F1C4BD7A65F0D7DB5F0B3EFF6DBC2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		4AC6D69AF0117598D01B534355B04F9E /* Pods_beeper_exampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_beeper_exampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A22493331B429A9C87E59B43F3B09AB /* Anchorage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Anchorage-prefix.pch"; sourceTree = "<group>"; };
 		5BD2505AA88845A4BEF0A5498F1F4EAD /* Anchorage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Anchorage.modulemap; sourceTree = "<group>"; };
 		66D5CA84CB3D18952CA70CBD489AB79B /* beeper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "beeper-prefix.pch"; sourceTree = "<group>"; };
@@ -98,19 +105,26 @@
 		7D312EB6C2681AFCAD104CD71A333093 /* AnchorGroupProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnchorGroupProvider.swift; path = Source/AnchorGroupProvider.swift; sourceTree = "<group>"; };
 		7FE3011866582C3241FB091CEF38AC1E /* Anchorage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Anchorage.xcconfig; sourceTree = "<group>"; };
 		7FEE5BE3409F6144D15D6AD5C7158977 /* Pods-beeper_exampleTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-beeper_exampleTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		8509A9B4FF686B83098BFB7E08300E65 /* Pods_beeper_example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_beeper_example.framework; path = "Pods-beeper_example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8509A9B4FF686B83098BFB7E08300E65 /* Pods_beeper_example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_beeper_example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		963CA904A2181D28BC2299EF4AE13A87 /* Pods-beeper_exampleUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-beeper_exampleUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		9BBAD8036F1EA0DDC5A50FA16E5D8357 /* Anchorage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Anchorage.framework; path = Anchorage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9BBAD8036F1EA0DDC5A50FA16E5D8357 /* Anchorage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Anchorage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9F479978A8FD8E9D179E3FC53FD73EF5 /* Pods-beeper_exampleUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-beeper_exampleUITests-dummy.m"; sourceTree = "<group>"; };
 		A1D8E7885A6F022C0ABCAA9BA2F0EF56 /* Anchorage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Anchorage-dummy.m"; sourceTree = "<group>"; };
 		AA4D3786244E3B48DC711468869715F5 /* Pods-beeper_exampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-beeper_exampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		AD4A5E781916EE19BDBBD93CBD6D8D44 /* Pods-beeper_exampleTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-beeper_exampleTests-dummy.m"; sourceTree = "<group>"; };
 		ADF6AE649FA47E85DF2378C842512C9D /* Pods-beeper_example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-beeper_example-dummy.m"; sourceTree = "<group>"; };
+		B0C6F9752262CCEC00430428 /* TagSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TagSectionController.swift; path = Sources/TagSectionController.swift; sourceTree = "<group>"; };
+		B0C6F9772262CD1000430428 /* TagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TagView.swift; path = Sources/TagView.swift; sourceTree = "<group>"; };
+		B0C6F9792262CD2A00430428 /* TagBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TagBarView.swift; path = Sources/TagBarView.swift; sourceTree = "<group>"; };
+		B0C6F97B2262CD3F00430428 /* WrapperCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WrapperCollectionViewCell.swift; path = Sources/WrapperCollectionViewCell.swift; sourceTree = "<group>"; };
+		B0C6F97D2262CD7A00430428 /* PagerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PagerViewController.swift; path = Sources/PagerViewController.swift; sourceTree = "<group>"; };
+		B0C6F97F2262CD9400430428 /* PagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PagerView.swift; path = Sources/PagerView.swift; sourceTree = "<group>"; };
+		B0C6F9812262CDAC00430428 /* PagerViewSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PagerViewSectionController.swift; path = Sources/PagerViewSectionController.swift; sourceTree = "<group>"; };
 		B65C20BD8D01C7BE5165EB10DD9EF06E /* Pods-beeper_example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-beeper_example-acknowledgements.plist"; sourceTree = "<group>"; };
 		BCB003BBB47B8A9B7F862F6E960CCC80 /* Anchorage-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Anchorage-umbrella.h"; sourceTree = "<group>"; };
 		BCE1B07F10C33E79E381D0A3003A5AA5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		C2C3704A6337F26959E30A47BC035821 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		C2C3704A6337F26959E30A47BC035821 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C448D26A7608A5AC4E20957DBC518D82 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		CA6FDD0B0B2F71FEC0877B79D3A9BDCC /* Pods-beeper_exampleUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-beeper_exampleUITests-Info.plist"; sourceTree = "<group>"; };
 		CF53421B0790CAC329978AC660118112 /* Pods-beeper_exampleUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-beeper_exampleUITests.modulemap"; sourceTree = "<group>"; };
@@ -122,12 +136,12 @@
 		E3C4795F574FD1E9A5AA0DC268B12FD0 /* Pods-beeper_exampleTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-beeper_exampleTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		E52458BDC6F82A2A58ED5EBDD6B538FD /* Anchorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Anchorage.swift; path = Source/Anchorage.swift; sourceTree = "<group>"; };
 		EAF129512FE85435D891AE54F6CEB4DA /* beeper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "beeper-umbrella.h"; sourceTree = "<group>"; };
-		EAFC09BEDB6A7AE5A92A43E5F9763B51 /* beeper.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = beeper.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		EC46D345EA4F019AC1B07D67D47B8AC3 /* beeper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = beeper.swift; path = Sources/beeper.swift; sourceTree = "<group>"; };
+		EAFC09BEDB6A7AE5A92A43E5F9763B51 /* beeper.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = beeper.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		EC46D345EA4F019AC1B07D67D47B8AC3 /* Protocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Protocols.swift; path = Sources/Protocols.swift; sourceTree = "<group>"; };
 		EE4E9492061324F2338D224FB1D894EA /* Pods-beeper_example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-beeper_example.modulemap"; sourceTree = "<group>"; };
 		EEA666A2A8804E6F1BEF2304032F08AC /* beeper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "beeper-dummy.m"; sourceTree = "<group>"; };
 		FACD477428C04E65B74DAD268B4AC470 /* Pods-beeper_exampleUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-beeper_exampleUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		FE728A17F9F38BC3363F4E4710087F44 /* Pods_beeper_exampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_beeper_exampleTests.framework; path = "Pods-beeper_exampleTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE728A17F9F38BC3363F4E4710087F44 /* Pods_beeper_exampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_beeper_exampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -253,9 +267,16 @@
 		77BDC1601189BF61EE3BDCC9CBD63BD4 /* beeper */ = {
 			isa = PBXGroup;
 			children = (
-				EC46D345EA4F019AC1B07D67D47B8AC3 /* beeper.swift */,
+				EC46D345EA4F019AC1B07D67D47B8AC3 /* Protocols.swift */,
 				B61F282056632CC32996D8C30486BCBF /* Pod */,
 				B3566DDFA43F9F1B2FF6B1AA262948FB /* Support Files */,
+				B0C6F9752262CCEC00430428 /* TagSectionController.swift */,
+				B0C6F9772262CD1000430428 /* TagView.swift */,
+				B0C6F9792262CD2A00430428 /* TagBarView.swift */,
+				B0C6F97B2262CD3F00430428 /* WrapperCollectionViewCell.swift */,
+				B0C6F97D2262CD7A00430428 /* PagerViewController.swift */,
+				B0C6F97F2262CD9400430428 /* PagerView.swift */,
+				B0C6F9812262CDAC00430428 /* PagerViewSectionController.swift */,
 			);
 			name = beeper;
 			path = ../..;
@@ -344,7 +365,6 @@
 				1E43AFC047D73D87CA1855418E152B3C /* Priority.swift */,
 				A443F00E75788E8E13AB1A003706E48E /* Support Files */,
 			);
-			name = Anchorage;
 			path = Anchorage;
 			sourceTree = "<group>";
 		};
@@ -512,6 +532,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
@@ -601,8 +622,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0C6F97A2262CD2A00430428 /* TagBarView.swift in Sources */,
+				B0C6F97C2262CD3F00430428 /* WrapperCollectionViewCell.swift in Sources */,
+				B0C6F97E2262CD7A00430428 /* PagerViewController.swift in Sources */,
 				B0A109404BF07AD2CE34DCCEFC129554 /* beeper-dummy.m in Sources */,
-				9F2DBB77EC85600B275C14A95D06C55A /* beeper.swift in Sources */,
+				B0C6F9802262CD9400430428 /* PagerView.swift in Sources */,
+				9F2DBB77EC85600B275C14A95D06C55A /* Protocols.swift in Sources */,
+				B0C6F9762262CCEC00430428 /* TagSectionController.swift in Sources */,
+				B0C6F9822262CDAC00430428 /* PagerViewSectionController.swift in Sources */,
+				B0C6F9782262CD1000430428 /* TagView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -668,11 +696,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-beeper_exampleTests/Pods-beeper_exampleTests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-beeper_exampleTests/Pods-beeper_exampleTests.modulemap";
 				OTHER_LDFLAGS = "";
@@ -707,11 +731,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-beeper_exampleUITests/Pods-beeper_exampleUITests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-beeper_exampleUITests/Pods-beeper_exampleUITests.modulemap";
 				OTHER_LDFLAGS = "";
@@ -745,11 +765,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-beeper_exampleUITests/Pods-beeper_exampleUITests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-beeper_exampleUITests/Pods-beeper_exampleUITests.modulemap";
 				OTHER_LDFLAGS = "";
@@ -784,11 +800,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-beeper_exampleTests/Pods-beeper_exampleTests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-beeper_exampleTests/Pods-beeper_exampleTests.modulemap";
 				OTHER_LDFLAGS = "";
@@ -822,11 +834,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-beeper_example/Pods-beeper_example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-beeper_example/Pods-beeper_example.modulemap";
 				OTHER_LDFLAGS = "";
@@ -860,11 +868,7 @@
 				INFOPLIST_FILE = "Target Support Files/beeper/beeper-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/beeper/beeper.modulemap";
 				PRODUCT_MODULE_NAME = beeper;
 				PRODUCT_NAME = beeper;
@@ -896,11 +900,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-beeper_example/Pods-beeper_example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-beeper_example/Pods-beeper_example.modulemap";
 				OTHER_LDFLAGS = "";
@@ -969,8 +969,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -993,11 +992,7 @@
 				INFOPLIST_FILE = "Target Support Files/Anchorage/Anchorage-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Anchorage/Anchorage.modulemap";
 				PRODUCT_MODULE_NAME = Anchorage;
 				PRODUCT_NAME = Anchorage;
@@ -1028,11 +1023,7 @@
 				INFOPLIST_FILE = "Target Support Files/beeper/beeper-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/beeper/beeper.modulemap";
 				PRODUCT_MODULE_NAME = beeper;
 				PRODUCT_NAME = beeper;
@@ -1128,11 +1119,7 @@
 				INFOPLIST_FILE = "Target Support Files/Anchorage/Anchorage-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Anchorage/Anchorage.modulemap";
 				PRODUCT_MODULE_NAME = Anchorage;
 				PRODUCT_NAME = Anchorage;
