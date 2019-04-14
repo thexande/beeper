@@ -73,7 +73,7 @@ class ViewController: PagerViewController {
 }
 
 extension ViewController: PagerViewDelegate, PagerViewDatasource {
-    public func titleForPage() -> String {
+    public func titleForPage(at index: Int) -> String {
         return "woot"
     }
     

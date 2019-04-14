@@ -1,7 +1,7 @@
 import Anchorage
 
 public protocol PagerViewDelegate: AnyObject {
-    func titleForPage() -> String
+    func titleForPage(at index: Int) -> String
 }
 
 public protocol PagerViewDatasource: AnyObject {
@@ -16,24 +16,86 @@ protocol ViewRendering {
 
 final class TagView: UIView, ViewRendering, Reusable {
     
-    struct Properties {
-        let title: String
+    typealias Properties = String
+    let title = UILabel()
+    
+    func render(_ properties: Properties) {
+        title.text = properties
     }
     
-    static let `default` = Properties(title: "")
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        addSubview(title)
+        title.edgeAnchors == edgeAnchors
+        backgroundColor = .white
+    }
     
-    func render(_ properties: TagView.Properties) {
-        
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+}
+
+final class TagSectionController: NSObject, CollectionViewSectionController {
+    
+    weak var delegate: PagerViewDelegate?
+    weak var datasource: PagerViewDatasource?
+    
+    private final class Cell: WrapperCollectionViewCell<TagView> { }
+    
+    static func register(with collection: UICollectionView) {
+        collection.register(Cell.self)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView,
+                        numberOfItemsInSection section: Int) -> Int {
+        return datasource?.numberOfPages() ?? 0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView,
+                        cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Cell.identifier,
+                                                            for: indexPath) as? Cell else {
+            return UICollectionViewCell()
+        }
+        cell.wrapped.render(delegate?.titleForPage(at: indexPath.item) ?? "")
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return .init(width: 100, height: collectionView.frame.height)
+    }
+}
+
+extension UICollectionView {
+    func register(_ cellType: UICollectionViewCell.Type) {
+        register(cellType, forCellWithReuseIdentifier: cellType.identifier)
     }
 }
 
 final class TagBarView: UIView, ViewRendering {
     
     private class TagCell: WrapperCollectionViewCell<TagView> { }
-    private let collection = UICollectionView(frame: .zero,
-                                              collectionViewLayout: UICollectionViewFlowLayout())
+    let collection = UICollectionView(frame: .zero,
+                                      collectionViewLayout: UICollectionViewFlowLayout())
+    private let tagSection = TagSectionController()
+
     typealias Properties = [TagView.Properties]
     var properties: Properties = []
+    
+    public weak var delegate: PagerViewDelegate? {
+        didSet {
+            tagSection.delegate = delegate
+        }
+    }
+    
+    public weak var datasource: PagerViewDatasource? {
+        didSet {
+            tagSection.datasource = datasource
+        }
+    }
+    
     
     func render(_ properties: [TagView.Properties]) {
         self.properties = properties
@@ -42,26 +104,16 @@ final class TagBarView: UIView, ViewRendering {
     override init(frame: CGRect) {
         super.init(frame: frame)
         addSubview(collection)
+        collection.delegate = tagSection
+        collection.dataSource = tagSection
         collection.edgeAnchors == edgeAnchors
+        TagSectionController.register(with: collection)
+        
+        (collection.collectionViewLayout as? UICollectionViewFlowLayout)?.scrollDirection = .horizontal
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
-    }
-}
-
-extension TagBarView: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return properties.count
-    }
-    
-    func collectionView(_ collectionView: UICollectionView,
-                        cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: TagView.identifier,
-                                                            for: indexPath) as? TagCell else {
-            return UICollectionViewCell()
-        }
-        return cell
     }
 }
 
@@ -98,17 +150,20 @@ open class PagerViewController: UIViewController {
     public weak var delegate: PagerViewDelegate? {
         didSet {
             pager.delegate = delegate
+            tagBarView.delegate = delegate
         }
     }
     
     public weak var datasource: PagerViewDatasource? {
         didSet {
             pager.datasource = datasource
+            tagBarView.datasource = datasource
         }
     }
     
     public func reloadData() {
         pager.collection.reloadData()
+        tagBarView.collection.reloadData()
     }
     
     open override func viewDidLoad() {
