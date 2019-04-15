@@ -21,7 +21,9 @@ final class TagSectionController: NSObject, CollectionViewSectionController {
                                                             for: indexPath) as? Cell else {
                                                                 return UICollectionViewCell()
         }
-        cell.wrapped.render(delegate?.titleForPage(at: indexPath.item) ?? "")
+        let title = delegate?.titleForPage(at: indexPath.item) ?? ""
+        cell.wrapped.render(.init(title: title,
+                                  selection: .unselected))
         cell.wrapped.layoutMargins = inset
         return cell
     }
@@ -30,7 +32,7 @@ final class TagSectionController: NSObject, CollectionViewSectionController {
                         layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
         let title = delegate?.titleForPage(at: indexPath.item) ?? ""
-        let width = title.size(withAttributes:[.font: UIFont.systemFont(ofSize:18.0)]).width + inset.left + inset.right
+        let width = title.size(withAttributes:[.font: UIFont.systemFont(ofSize: 18)]).width + inset.left + inset.right
         return .init(width: width, height: collectionView.frame.height)
     }
     
@@ -51,4 +53,15 @@ final class TagSectionController: NSObject, CollectionViewSectionController {
                         minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return 0
     }
+}
+
+
+protocol Paging: AnyObject {
+    func pageDidChange(to index: Int)
+    
+}
+
+final class PagingCoordinator {
+    weak var tab: Paging?
+    weak var pager: Paging?
 }

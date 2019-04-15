@@ -2,11 +2,20 @@ import Anchorage
 
 final class TagView: UIView, ViewRendering, Reusable {
     
-    typealias Properties = String
+    struct Properties {
+        enum Selection {
+            case selected
+            case unselected
+        }
+        
+        let title: String
+        let selection: Selection
+    }
+    
     let title = UILabel()
     
     func render(_ properties: Properties) {
-        title.text = properties
+        title.text = properties.title
     }
     
     override init(frame: CGRect) {
